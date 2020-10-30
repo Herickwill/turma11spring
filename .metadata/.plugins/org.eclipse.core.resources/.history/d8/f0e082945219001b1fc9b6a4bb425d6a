@@ -1,0 +1,18 @@
+package com.example.demo;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+//@Table(name = "Produto") mudar o nome da tabela sem precisar alterar o nome da classe
+public class Produto {
+	
+	@Id
+	private int id;
+	
+	@Column
+	private String nome;
+	
+}
