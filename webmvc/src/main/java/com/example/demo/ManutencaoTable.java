@@ -26,6 +26,9 @@ public class ManutencaoTable {
 	private String nome;
 	
 	@Column
+	private String categoria;
+	
+	@Column
 	@JsonFormat(pattern="yyyy-mm-dd")
 	private Date data;
 	
@@ -33,7 +36,17 @@ public class ManutencaoTable {
 	private boolean pago;
 	
 	
+	
+	
 	//get e set
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
 
 	public Long getId() {
 		return id;

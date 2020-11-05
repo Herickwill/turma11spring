@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="webmvc"/>
+<aop-project name="feiralivre"/>
 <aop-project name="exercicio30_10_2020-2"/>
 <aop-project name="exercicio30_10_2020"/>
 <aop-project name="dados2"/>
