@@ -9,8 +9,6 @@
 <fullyQualifiedTypeName name="com.sun.el.stream.Optional"/>
 <fullyQualifiedTypeName name="java.util.Optional"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="javax.persistence.Entity"/>
-<fullyQualifiedTypeName name="javax.persistence.Table"/>
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="com.sun.istack.NotNull"/>
 <fullyQualifiedTypeName name="javax.persistence.Temporal"/>
@@ -18,6 +16,13 @@
 <fullyQualifiedTypeName name="org.generation.blogPessoal.model.Postagem"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.generation.blogPessoal.model.PostagemModel"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="org.ceuci.feiraLivre.model.ProdutoModel"/>
+<fullyQualifiedTypeName name="org.ceuci.feiraLivre.model.CategoriaModel"/>
+<fullyQualifiedTypeName name="org.ceuci.feiraLivre.model.UsuarioModel"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.generation.blogPessoal.repository.TemaRepository"/>
+<fullyQualifiedTypeName name="org.generation.blogPessoal.model.Tema"/>
 </qualifiedTypeNameHistroy>
