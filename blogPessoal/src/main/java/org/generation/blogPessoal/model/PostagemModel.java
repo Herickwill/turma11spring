@@ -32,7 +32,13 @@ public class PostagemModel {
 	@NotNull
 	@Size(min = 10, max = 500)
 	private String texto;
+	
+	@NotNull
+	private int ano;
 
+//	@Column(columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+//	@Temporal(TemporalType.TIMESTAMP)
+//	@CreationTimestamp
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date data = new java.sql.Date(System.currentTimeMillis());
 
@@ -80,6 +86,14 @@ public class PostagemModel {
 
 	public void setTema(Tema tema) {
 		this.tema = tema;
+	}
+
+	public int getAno() {
+		return ano;
+	}
+
+	public void setAno(int ano) {
+		this.ano = ano;
 	}
 
 }

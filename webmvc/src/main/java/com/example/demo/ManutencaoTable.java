@@ -13,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.sun.istack.NotNull;
 
 @Entity
-@Table(name="tb_manutencao")
+@Table(name="tb_manutencao_crud")
 public class ManutencaoTable {
 	
 	//atributos

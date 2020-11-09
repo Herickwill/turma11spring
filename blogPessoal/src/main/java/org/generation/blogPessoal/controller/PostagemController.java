@@ -26,6 +26,28 @@ public class PostagemController {
 		@Autowired
 		private PostagemRepository repository;
 		
+		
+		@GetMapping(value="/maior")
+		public ResponseEntity<List<PostagemModel>> findAllMaior(){
+			return ResponseEntity.ok(repository.findAllMaior());
+		}
+		
+		@GetMapping(value="/ordem")
+		public ResponseEntity<List<PostagemModel>> anosDesc(){
+			return ResponseEntity.ok(repository.anosDesc());
+		}
+		
+		@GetMapping(value="/intervalo")
+		public ResponseEntity<List<PostagemModel>> anosIntervalos(){
+			return ResponseEntity.ok(repository.anosIntervalos());
+		}
+		
+		@GetMapping(value="/asc")
+		public ResponseEntity<List<PostagemModel>> anosAsc(){
+			return ResponseEntity.ok(repository.anosAsc());
+		}
+		
+		
 		//pegar todos os dados em lista
 		@GetMapping
 		public ResponseEntity<List<PostagemModel>> GetAll(){
@@ -33,6 +55,7 @@ public class PostagemController {
 		}
 		
 		//pagina /postagens/1, por exemplo, retorna o dado de acordo com o ID colocado
+		//se o id existir, "ok", se não existir, aparecer erro "notfound", resp objeto criado
 		@GetMapping("/{id}")
 		public ResponseEntity<PostagemModel> GetById(@PathVariable Long id){
 			return repository.findById(id)

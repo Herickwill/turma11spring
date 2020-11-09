@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "b1575af0-5b8c-4254-8b8c-e7429ce0b792",
+		"name": "CRUD_minhaLojaDeGames",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "adicionar categoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Aventura\",\r\n    \"descricao\":\"Jogos de aventura\",\r\n    \"midia\":\"fisico\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/categorias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ver todas as categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categorias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar categoria",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"nome\":\"Aventura\",\r\n    \"descricao\":\"Jogos de aventura\",\r\n    \"midia\":\"fisica\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/categorias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar uma categoria",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categorias/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categorias",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "achar por descricao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/categorias/descricao/aventura",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categorias",
+						"descricao",
+						"aventura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar jogo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"God of War 2\",\r\n    \"preco\":\"100\",\r\n    \"categoria\":{\r\n        \"id\":2\r\n    }\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jogos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jogos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar jogo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"titulo\":\"God of War 2\",\r\n    \"preco\":\"100\",\r\n    \"categoria\":{\r\n        \"id\":2\r\n    }\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jogos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jogos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ver todos os jogos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/jogos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jogos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar algum jogo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/jogos/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jogos",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "achar por titulo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/jogos/titulo/god",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jogos",
+						"titulo",
+						"god"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adicionar jogador",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"douglas\",\r\n    \"email\":\"douglas1@hotmail.com\",\r\n    \"senha\":\"12123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jogador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jogador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ver todos os jogadores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/jogador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jogador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar jogador",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"nome\":\"douglas\",\r\n    \"email\":\"douglas2@hotmail.com\",\r\n    \"senha\":\"12123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jogador",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jogador"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar jogador",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/jogador/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jogador",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
